@@ -27,7 +27,10 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://chriskbs.github.io/FoodSense/"
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", 
     "api": "json-server db-test.json -p 3333 --delay 1500",
     "start": "react-scripts start",
     "build": "react-scripts build",
